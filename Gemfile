@@ -43,3 +43,9 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+gem 'bootstrap-sass', '~> 3.1.1'
+gem 'therubyracer'
+gem 'less-rails'
+gem 'twitter-bootstrap-rails'
+gem 'kaminari'
+gem 'kaminari-bootstrap', '~> 3.0.1'
