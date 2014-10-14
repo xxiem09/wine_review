@@ -2,7 +2,7 @@ class WinesController <ApplicationController
   before_action :set_wine, only: [ :show, :edit, :update, :destroy ]
   def index
   	@available_at = Time.now
-  	@wines = Wine.order(:name).page(params[:page])
+  	@wines = Wine.includes(:log_entries).order(:name).page(params[:page])
   end
   def show
   	
