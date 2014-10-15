@@ -15,9 +15,9 @@
 </ol>
 
                             
-<%= link_to 'Write a Log Entry', wine_log_entries_path(@wine),
+<%= link_to 'Write a Log Entry',  new_wine_log_entry_path(@wine),
         remote: true,
-        data: { 'update-target' => 'log_entries_form_container' },
+        data: { 'update-target' => 'log_entry_form_container' },
         class: 'btn btn-primary' %>
 
-<div id="log_entries_form_container"></div>
+<div id="log_entry_form_container"></div>

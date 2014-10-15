@@ -1,5 +1,5 @@
 WineReview::Application.routes.draw do
-  resources :log_entries
+  #resources :log_entries
 
   resources :wines do
     resources :log_entries
